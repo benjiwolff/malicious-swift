@@ -5,6 +5,9 @@ import AppKit
 import PackageDescription
 
 let package = {
+    // This is where we try to do some "malicious" activity.
+    // If we can do things such as starting arbitrary processes when the package resolved,
+    // it is a serious security concern for developers.
     let process = Process()
     process.launchPath = "/usr/bin/say"
     process.arguments = ["hello world"]
