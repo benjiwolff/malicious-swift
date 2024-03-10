@@ -9,6 +9,7 @@ let package = {
     process.launchPath = "/usr/bin/say"
     process.arguments = ["hello world"]
     process.launch()
+    print("hello from the other side")
 
     return Package(
         name: "malicious-swift",
