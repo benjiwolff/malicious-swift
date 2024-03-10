@@ -26,4 +26,4 @@ let package = {
                 name: "malicious-swift"),
         ]
     )
-}
+}()
